@@ -1,0 +1,37 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+    restart: always
+    stop_signal: SIGINT
+    depends_on:
+      - redis
+      - postgres
+    env_file:
+      - .env
+
+  redis:
+    image: redis:7-alpine
+    restart: always
+    volumes:
+      - redis-data:/data
+    environment:
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+
+  postgres:
+    image: postgres:15-alpine
+    restart: always
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: 5432
+      POSTGRES_PASSWORD:
+      POSTGRES_USER:
+      POSTGRES_DB:
+
+volumes:
+  redis-data:
+  postgres-data:

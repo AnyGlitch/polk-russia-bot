@@ -29,7 +29,7 @@ tortoise-orm = {extras = ["asyncpg"], version = "^0.19.3"}
 python-decouple = "^3.8"
 
 [tool.poetry.dev-dependencies]
-pre-commit = "^3.2.2"
+pre-commit = "^3.3.1"
 mypy = "^1.2.0"
 ruff = "^0.0.263"
 black = "^23.3.0"

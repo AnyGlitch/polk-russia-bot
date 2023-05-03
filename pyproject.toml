@@ -31,7 +31,7 @@ python-decouple = "^3.8"
 [tool.poetry.dev-dependencies]
 pre-commit = "^3.3.1"
 mypy = "^1.2.0"
-ruff = "^0.0.263"
+ruff = "^0.0.264"
 black = "^23.3.0"
 
 [tool.aerich]

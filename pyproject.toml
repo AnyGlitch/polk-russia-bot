@@ -32,7 +32,7 @@ python-decouple = "^3.8"
 pre-commit = "^3.3.3"
 mypy = "^1.4.1"
 ruff = "^0.0.277"
-black = "^23.3.0"
+black = "^23.7.0"
 
 [tool.aerich]
 tortoise_orm = "source.config.TORTOISE_ORM"

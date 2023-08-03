@@ -23,7 +23,7 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = "^3.10"
-aiogram = {extras = ["redis"], version = "^3.0.0b", allow-prereleases = true}
+aiogram = {extras = ["redis"], version = "^3.0.0b9", allow-prereleases = true}
 aerich = "^0.7.2"
 tortoise-orm = {extras = ["asyncpg"], version = "^0.19.3"}
 python-decouple = "^3.8"

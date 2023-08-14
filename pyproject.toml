@@ -25,7 +25,7 @@ classifiers = [
 python = "^3.10"
 aiogram = {extras = ["redis"], version = "^3.0.0b", allow-prereleases = true}
 aerich = "^0.7.2"
-tortoise-orm = {extras = ["asyncpg"], version = "^0.19.3"}
+tortoise-orm = {extras = ["asyncpg"], version = "^0.20.0"}
 python-decouple = "^3.8"
 
 [tool.poetry.dev-dependencies]
